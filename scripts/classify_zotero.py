@@ -444,6 +444,14 @@ NO_PRIOR = {
 # Hand corrections made while writing the pages: the classifier's answer was
 # defensible but wrong on reading the item. Key -> (page, note).
 MANUAL_OVERRIDES = {
+    "TQDFZ7NX": ("Unsorted", "prebiotic photochemistry; origin-of-life cluster"),
+    "DEE9S9TZ": ("Unsorted", "forest use and environmental attitudes, Balearics"),
+    "MZ23DV5H": ("Radiometry_and_Photometry", "energy and exergy of light"),
+    "JDVFF66J": ("Radiometry_and_Photometry", "CIE colorimetric tables"),
+    "I6T5IBTJ": ("Photoinhibition_and_Light_Stress", "realism of UV-B lamp supplementation"),
+    "9V5F7K9Q": ("Forest_Seedling_Production", "light requirements for cork oak germination"),
+    "T8V4KIWG": ("Forest_Seedling_Production", "light needs for cork oak seed germination"),
+
     "IJELJATY": ("Swedish_Forestry", "the Swedish Forestry Act"),
     "TLLBYS52": ("Forestry_and_Agriculture_Statistics", "seedling production statistics 2017"),
     "6XL75F5K": ("Forest_Regeneration", "seedling size, competition and overstory density"),
