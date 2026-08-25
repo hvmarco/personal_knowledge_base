@@ -431,6 +431,13 @@ NO_PRIOR = {
 # Hand corrections made while writing the pages: the classifier's answer was
 # defensible but wrong on reading the item. Key -> (page, note).
 MANUAL_OVERRIDES = {
+    "CEDLGB5R": ("Statistics_and_Data_Analysis", "gap statistic for cluster number"),
+    "APTYNS7G": ("Greenhouse_Horticulture", "homemade growth chamber"),
+    "KBP62DFJ": ("Greenhouse_Horticulture", "customizable growth chamber"),
+    "5AQXMPQ2": ("Greenhouse_Horticulture", "low-cost growth chambers"),
+    "RKBLT9VW": ("Greenhouse_Horticulture", "soil moisture and conductivity sensor"),
+    "KGWNJS88": ("Photosynthesis_and_Gas_Exchange", "hydraulic failure and drought mortality"),
+
     "DWUVL768": ("Forest_Damage_and_Herbivory", "Vastmanland forest fire inquiry"),
     "J96YQJKB": ("Greenhouse_Horticulture", "Ludvig Svensson climate screen product"),
 
