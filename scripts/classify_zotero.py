@@ -431,6 +431,9 @@ NO_PRIOR = {
 # Hand corrections made while writing the pages: the classifier's answer was
 # defensible but wrong on reading the item. Key -> (page, note).
 MANUAL_OVERRIDES = {
+    "DWUVL768": ("Forest_Damage_and_Herbivory", "Vastmanland forest fire inquiry"),
+    "J96YQJKB": ("Greenhouse_Horticulture", "Ludvig Svensson climate screen product"),
+
     "XT2TK2UC": ("Solar_Radiation_Modelling", "sky radiance and luminance distribution models"),
     "JP3EUWDI": ("Solar_Radiation_Modelling", "sky type determination from illuminance"),
     "QKSR9LY7": ("Forest_Seedling_Production", "history of Swedish plant production"),
