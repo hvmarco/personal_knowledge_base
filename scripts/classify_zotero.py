@@ -444,6 +444,19 @@ NO_PRIOR = {
 # Hand corrections made while writing the pages: the classifier's answer was
 # defensible but wrong on reading the item. Key -> (page, note).
 MANUAL_OVERRIDES = {
+    "FSDDRE43": ("Energy_Market_and_Grid_Data", "Nord Pool historical market data"),
+    "EL3DBRLN": ("Swedish_Forestry", "glacial survival of boreal trees"),
+    "GVSHYAV2": ("Tree_Breeding_and_Propagation", "genetic variation and wood quality"),
+    "QGTEG2XL": ("Greenhouse_Horticulture", "crop production textbook"),
+    "9XV9H7TB": ("Greenhouse_Horticulture", "fundamentals of horticulture"),
+    "SBW8YNS9": ("Greenhouse_Horticulture", "greenhouse management textbook"),
+    "EEYK9TK5": ("Greenhouse_Horticulture", "interior plantscapes"),
+    "UIZPZXRU": ("Horticultural_Lighting", "lighting for plant growth"),
+    "PBAPGNC5": ("Horticultural_Lighting", "non-point light sources, light calculations"),
+    "Q5EY6BWJ": ("Horticultural_Lighting", "growth chamber light chapter"),
+    "IGZ9Y4EG": ("Lighting_Strategy_and_Control", "radiation quality, intensity and duration"),
+    "SKN6XWGW": ("Light_Quality_and_Photomorphogenesis", "how plants sense light"),
+
     "YKHJ8BZ8": ("Swedish_Forestry", "rhizosphere priming and soil carbon under spruce and pine"),
     "A9P7CV62": ("Forest_Regeneration", "success of autumn plantings"),
     "C696VSZB": ("Seedling_Quality_and_Root_Growth_Potential", "history of the target plant concept"),
