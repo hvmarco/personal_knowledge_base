@@ -15,7 +15,9 @@
   "Agrivoltaics",
   "PV_Economics_and_LCA",
   "Solar_Radiation_Modelling",
-  "PV_Standards_and_Measurement"
+  "PV_Standards_and_Measurement",
+  "PV_Degradation_and_Reliability",
+  "PV_in_Nordic_Climates"
  ],
  "items": {
   "LPZRRRFG": "Radiometry_and_Photometry",
@@ -166,6 +168,31 @@
   "Y6UK7UUY": "PV_Standards_and_Measurement",
   "A27FZ9NT": "PV_Standards_and_Measurement",
   "X8YXSHBL": "PV_Standards_and_Measurement",
-  "QPDP5CHC": "PV_Standards_and_Measurement"
+  "QPDP5CHC": "PV_Standards_and_Measurement",
+  "X3I7WXZ7": "PV_Degradation_and_Reliability",
+  "KPJHVGYR": "PV_Degradation_and_Reliability",
+  "PFNRLE6G": "PV_Degradation_and_Reliability",
+  "4SPPAHRC": "PV_Degradation_and_Reliability",
+  "5QE6K33F": "PV_Degradation_and_Reliability",
+  "UCAEW66S": "PV_Degradation_and_Reliability",
+  "NFT4V6JA": "PV_Degradation_and_Reliability",
+  "XHEHX9UK": "PV_Degradation_and_Reliability",
+  "PJ5963BI": "PV_Degradation_and_Reliability",
+  "5WEUA54G": "PV_Degradation_and_Reliability",
+  "L9L7AWPD": "PV_Degradation_and_Reliability",
+  "G5HM67XL": "PV_Degradation_and_Reliability",
+  "JYQW7XRQ": "PV_Degradation_and_Reliability",
+  "79488T2I": "PV_Degradation_and_Reliability",
+  "N2BQ5IDK": "PV_Degradation_and_Reliability",
+  "ZICIA76K": "PV_Degradation_and_Reliability",
+  "6XHGVQTY": "PV_Degradation_and_Reliability",
+  "S3FHG7SB": "PV_Degradation_and_Reliability",
+  "LIRHVQDH": "PV_Degradation_and_Reliability",
+  "LQKFUHFU": "PV_in_Nordic_Climates",
+  "ND6PXJYZ": "PV_in_Nordic_Climates",
+  "GVSILHEG": "PV_in_Nordic_Climates",
+  "T7TUNDEM": "PV_in_Nordic_Climates",
+  "TKFSWMJP": "PV_in_Nordic_Climates",
+  "5U47488N": "PV_in_Nordic_Climates"
  }
 }

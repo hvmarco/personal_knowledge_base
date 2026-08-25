@@ -410,6 +410,15 @@ NO_PRIOR = {
 # Hand corrections made while writing the pages: the classifier's answer was
 # defensible but wrong on reading the item. Key -> (page, note).
 MANUAL_OVERRIDES = {
+    # "reliability" / "degradation" pulled non-PV items onto the PV pages
+    "V28MQKKX": ("Photosynthesis_and_Gas_Exchange", "quality of gas exchange measurements"),
+    "83WKV2WU": ("Statistics_and_Data_Analysis", "measurement error in continuous variables"),
+    "53GYUM7P": ("Forest_Regeneration", "silvology; eco-unit development, not PV degradation"),
+    "M8GK7W8Z": ("Unsorted", "UV exposure and vitamin D; sits with that candidate"),
+    # Swedish agency material belongs with the practice pages
+    "U24TU3QG": ("Permitting_and_Environmental_Assessment", "Energimyndigheten, the solcellsparker guidance source"),
+    "U9YZMK5X": ("PV_Electrical_Design_and_Inverters", "Elsäkerhetsverket rooftop installation rules"),
+    "8MDPCKGK": ("PV_Electrical_Design_and_Inverters", "electrical safety requirements for PV plants"),
     "5TA8F6L9": ("Site_Layout_and_Civil_Design", "steel corrosion; kept for mounting structures, not BIPV"),
     # "calibration" pulled image-calibration papers onto PV standards
     "BFV2B9YG": ("Plant_Phenotyping_and_Image_Analysis", "camera colour calibration for agriculture imaging"),
