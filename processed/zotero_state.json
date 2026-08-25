@@ -29,7 +29,8 @@
   "PV_Cell_and_Module_Technologies",
   "PAR_and_Spectral_Radiation",
   "Photoinhibition_and_Light_Stress",
-  "Plant_Phenotyping_and_Image_Analysis"
+  "Plant_Phenotyping_and_Image_Analysis",
+  "Photoperiod_and_Dormancy_Induction"
  ],
  "items": {
   "LPZRRRFG": "Radiometry_and_Photometry",
@@ -582,6 +583,32 @@
   "T7EF87AY": "Plant_Phenotyping_and_Image_Analysis",
   "HF7QG2H7": "Plant_Phenotyping_and_Image_Analysis",
   "8QKITRKP": "Plant_Phenotyping_and_Image_Analysis",
-  "FVP89BV8": "Plant_Phenotyping_and_Image_Analysis"
+  "FVP89BV8": "Plant_Phenotyping_and_Image_Analysis",
+  "EGEVNPMA": "Photoperiod_and_Dormancy_Induction",
+  "F7TTV9LR": "Photoperiod_and_Dormancy_Induction",
+  "RCEEQLTA": "Photoperiod_and_Dormancy_Induction",
+  "LTKLSPLM": "Photoperiod_and_Dormancy_Induction",
+  "A89SFY4Q": "Photoperiod_and_Dormancy_Induction",
+  "5Q32JNZ3": "Photoperiod_and_Dormancy_Induction",
+  "IUDW23QF": "Photoperiod_and_Dormancy_Induction",
+  "JTR4MZDA": "Photoperiod_and_Dormancy_Induction",
+  "6ZXTWV8G": "Photoperiod_and_Dormancy_Induction",
+  "VH8J2EV5": "Photoperiod_and_Dormancy_Induction",
+  "M7HZ62Q4": "Photoperiod_and_Dormancy_Induction",
+  "2LWHYDS9": "Photoperiod_and_Dormancy_Induction",
+  "L8PPMRQW": "Photoperiod_and_Dormancy_Induction",
+  "WD3XQTG6": "Photoperiod_and_Dormancy_Induction",
+  "PY2INV97": "Photoperiod_and_Dormancy_Induction",
+  "HQ9YYZ2S": "Photoperiod_and_Dormancy_Induction",
+  "W8K3WWN3": "Photoperiod_and_Dormancy_Induction",
+  "KCDVCVPR": "Photoperiod_and_Dormancy_Induction",
+  "D72RSR5T": "Photoperiod_and_Dormancy_Induction",
+  "6MWSLPFX": "Photoperiod_and_Dormancy_Induction",
+  "GMQZHY3X": "Photoperiod_and_Dormancy_Induction",
+  "KDY3UNGK": "Photoperiod_and_Dormancy_Induction",
+  "92FUJ6KB": "Photoperiod_and_Dormancy_Induction",
+  "XQDQS8L8": "Photoperiod_and_Dormancy_Induction",
+  "KPV9VYDE": "Photoperiod_and_Dormancy_Induction",
+  "JQP66XZZ": "Photoperiod_and_Dormancy_Induction"
  }
 }
