@@ -40,6 +40,7 @@ notes/log.md     -- append-only record of every operation
 5. If a file has more than ~50 items, use **Bulk import mode** instead of the single-note flow.
 6. When the user asks to sync Zotero (no file in `raw/`), run **Zotero sync**.
 7. Finish with **End-of-run maintenance**.
+8. Update the website (see *Update the Website*).
 
 ## Processing instructions (single notes)
 
@@ -95,6 +96,14 @@ Transport is whichever is configured — a Zotero MCP server, Zotero's local HTT
 5. **Trashed/deleted items:** tag the bullet `#removed-from-zotero`; do not delete it.
 6. Update `zotero_state.json`, `index.md`, `log.md`.
 7. Keep the sync read-only towards Zotero unless the user explicitly asks to write tags back.
+
+## Update the Website
+
+This vault is published as a MkDocs site (Material theme) on GitHub Pages, built from `mkdocs.yml`, `hooks.py`, `requirements.txt`, and `.github/workflows/deploy.yml`. `hooks.py` appends a live bullet count to each topic page's nav label at build time — no manual upkeep needed there. After every ingest or sync:
+
+- Refresh the **Latest Finds** section at the top of `notes/index.md` with the 3 most recently added notes, picking one from each of three different topic pages, in the vault's usual bullet format: `- **[[Page_Name]]** — [Title](url) — one-line description.`
+- If a new topic page or domain was created, add it to `mkdocs.yml`'s `nav:` list under the right domain group (mirroring the grouping in `notes/index.md`).
+- Stage, commit, and push (`git add`, `git commit`, `git push`) so the `deploy.yml` GitHub Actions workflow rebuilds and redeploys the site automatically. `processed/` stays gitignored and is never pushed — never `git add` it.
 
 ## Topic structure
 

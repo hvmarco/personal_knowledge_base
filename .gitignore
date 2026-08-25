@@ -2,3 +2,16 @@
 .obsidian/workspace-mobile.json
 __pycache__/
 *.pyc
+
+# Ingestion-pipeline source clippings — never tracked
+processed/
+
+# MkDocs build output
+site/
+
+# Python virtual environments
+.venv/
+venv/
+
+# OS cruft
+.DS_Store

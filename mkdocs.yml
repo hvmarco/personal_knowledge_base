@@ -1,0 +1,156 @@
+site_name: Second Brain
+site_url: https://hvmarco.github.io/personal_knowledge_base/
+repo_url: https://github.com/hvmarco/personal_knowledge_base
+repo_name: hvmarco/personal_knowledge_base
+edit_uri: edit/main/notes/
+
+docs_dir: notes
+
+theme:
+  name: material
+  palette:
+    - scheme: default
+      primary: teal
+      accent: cyan
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      primary: teal
+      accent: cyan
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.expand
+    - navigation.indexes
+    - navigation.top
+    - navigation.instant
+    - navigation.tracking
+    - search.suggest
+    - search.highlight
+    - search.share
+    - content.code.copy
+    - content.action.edit
+    - toc.follow
+
+hooks:
+  - hooks.py
+
+markdown_extensions:
+  - tables
+  - attr_list
+  - md_in_html
+  - admonition
+  - toc:
+      permalink: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.superfences
+
+plugins:
+  - search
+  - roamlinks
+
+nav:
+  - Home: index.md
+  - Photovoltaics:
+    - Photovoltaics.md
+    - Bifacial PV and Albedo: Bifacial_PV_and_Albedo.md
+    - Building Integrated PV: Building_Integrated_PV.md
+    - Energy Storage: Energy_Storage.md
+    - Indoor PV and Energy Harvesting: Indoor_PV_and_Energy_Harvesting.md
+    - PV Cell and Module Technologies: PV_Cell_and_Module_Technologies.md
+    - PV Degradation and Reliability: PV_Degradation_and_Reliability.md
+    - PV Economics and LCA: PV_Economics_and_LCA.md
+    - PV Forecasting and Ramp Control: PV_Forecasting_and_Ramp_Control.md
+    - PV Shading and Mismatch: PV_Shading_and_Mismatch.md
+    - PV Standards and Measurement: PV_Standards_and_Measurement.md
+    - PV System Performance: PV_System_Performance.md
+    - PV in Nordic Climates: PV_in_Nordic_Climates.md
+    - Solar Radiation Modelling: Solar_Radiation_Modelling.md
+    - Thin Film Solar Cells: Thin_Film_Solar_Cells.md
+  - Solar Park Development:
+    - Solar_Park_Development.md
+    - PV Electrical Design and Inverters: PV_Electrical_Design_and_Inverters.md
+    - Permitting and Environmental Assessment: Permitting_and_Environmental_Assessment.md
+    - Site Layout and Civil Design: Site_Layout_and_Civil_Design.md
+  - Agrivoltaics:
+    - Agrivoltaics_and_Dual_Use.md
+    - Agrivoltaics: Agrivoltaics.md
+    - PV Greenhouses: PV_Greenhouses.md
+  - Energy Systems:
+    - Energy_Systems.md
+    - Electricity Markets and Prices: Electricity_Markets_and_Prices.md
+    - Energy Transition and Scenarios: Energy_Transition_and_Scenarios.md
+    - Power Systems and Grid Integration: Power_Systems_and_Grid_Integration.md
+  - Plant Photobiology:
+    - Plant_Photobiology.md
+    - Chlorophyll Fluorescence: Chlorophyll_Fluorescence.md
+    - Horticultural Lighting: Horticultural_Lighting.md
+    - Light Quality and Photomorphogenesis: Light_Quality_and_Photomorphogenesis.md
+    - Lighting Strategy and Control: Lighting_Strategy_and_Control.md
+    - PAR and Spectral Radiation: PAR_and_Spectral_Radiation.md
+    - Photoinhibition and Light Stress: Photoinhibition_and_Light_Stress.md
+    - Photoperiod and Dormancy Induction: Photoperiod_and_Dormancy_Induction.md
+    - Photosynthesis and Gas Exchange: Photosynthesis_and_Gas_Exchange.md
+    - Plant Phenotyping and Image Analysis: Plant_Phenotyping_and_Image_Analysis.md
+    - Radiometry and Photometry: Radiometry_and_Photometry.md
+  - Controlled Environment Agriculture:
+    - Controlled_Environment_Agriculture.md
+    - Greenhouse Horticulture: Greenhouse_Horticulture.md
+    - Vertical Farming and Urban Agriculture: Vertical_Farming_and_Urban_Agriculture.md
+  - Forestry:
+    - Forestry.md
+    - Forest Damage and Herbivory: Forest_Damage_and_Herbivory.md
+    - Forest Regeneration: Forest_Regeneration.md
+    - Forest Seedling Production: Forest_Seedling_Production.md
+    - Frost Hardiness and Freezing Tests: Frost_Hardiness_and_Freezing_Tests.md
+    - Norway Spruce: Norway_Spruce.md
+    - Scots Pine: Scots_Pine.md
+    - Seedling Quality and Root Growth Potential: Seedling_Quality_and_Root_Growth_Potential.md
+    - Seedling Storage and Handling: Seedling_Storage_and_Handling.md
+    - Swedish Forestry: Swedish_Forestry.md
+    - Tree Breeding and Propagation: Tree_Breeding_and_Propagation.md
+  - Geospatial:
+    - Geospatial.md
+    - QGIS: QGIS.md
+    - PyQGIS and GIS Automation: PyQGIS_and_GIS_Automation.md
+    - Google Earth Engine: Google_Earth_Engine.md
+    - Geospatial Python: Geospatial_Python.md
+    - Remote Sensing: Remote_Sensing.md
+    - Drones and Photogrammetry: Drones_and_Photogrammetry.md
+    - Terrain and Lidar: Terrain_and_Lidar.md
+    - 3D Geovisualization: 3D_Geovisualization.md
+    - Cartography and Map Design: Cartography_and_Map_Design.md
+  - Data Sources:
+    - Data_Sources.md
+    - Geodata Portals Nordic: Geodata_Portals_Nordic.md
+    - Solar and Weather Data: Solar_and_Weather_Data.md
+    - Energy Market and Grid Data: Energy_Market_and_Grid_Data.md
+    - Global Datasets and Catalogs: Global_Datasets_and_Catalogs.md
+    - Forestry and Agriculture Statistics: Forestry_and_Agriculture_Statistics.md
+  - Tools and Methods:
+    - Tools_and_Methods.md
+    - Python: Python.md
+    - R: R.md
+    - PV Modelling Tools: PV_Modelling_Tools.md
+    - Statistics and Data Analysis: Statistics_and_Data_Analysis.md
+    - Optimization and Decision Making: Optimization_and_Decision_Making.md
+    - Reporting and Publishing: Reporting_and_Publishing.md
+    - CAD and Drafting: CAD_and_Drafting.md
+    - Machine Learning: Machine_Learning.md
+    - Deep Learning: Deep_Learning.md
+    - Embeddings: Embeddings.md
+    - Data: Data.md
+  - Themes:
+    - Themes.md
+    - Agriculture: Agriculture.md
+    - Climate Change: Climate_Change.md
+    - Urban Planning: Urban_Planning.md
+  - Other Topics:
+    - Other_Topics.md
+    - Unsorted: Unsorted.md
+  - Changelog: log.md
