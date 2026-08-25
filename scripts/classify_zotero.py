@@ -410,6 +410,25 @@ NO_PRIOR = {
 # Hand corrections made while writing the pages: the classifier's answer was
 # defensible but wrong on reading the item. Key -> (page, note).
 MANUAL_OVERRIDES = {
+    "5TA8F6L9": ("Site_Layout_and_Civil_Design", "steel corrosion; kept for mounting structures, not BIPV"),
+    # "calibration" pulled image-calibration papers onto PV standards
+    "BFV2B9YG": ("Plant_Phenotyping_and_Image_Analysis", "camera colour calibration for agriculture imaging"),
+    "9MQ246BB": ("Plant_Phenotyping_and_Image_Analysis", "image calibration toolbox, not PV measurement"),
+    "3X8ZFLRH": ("Radiometry_and_Photometry", "CIE colorimetric standards; belongs with the units papers"),
+    # "mismatch" pulled the spectral-mismatch standard onto the shading page
+    "IKTHRMYD": ("PV_Standards_and_Measurement", "IEC 60904-7 is a measurement standard"),
+    "YZ64XQ5M": ("PV_Standards_and_Measurement", "ASTM G173 reference spectra underpin STC rating"),
+    # data services and portals file under Data_Sources first
+    "PYGHKWUF": ("Solar_and_Weather_Data", "Meteocontrol is a weather data service"),
+    "U4LHCSWI": ("Solar_and_Weather_Data", "validation of the Solcast dataset itself"),
+    "YFYWCWCB": ("Solar_and_Weather_Data", "NREL MIDC measurement station data"),
+    "QSBBXN9R": ("Solar_and_Weather_Data", "NASA SSE data portal"),
+    "SWYFMIAC": ("Solar_and_Weather_Data", "NSRDB data viewer"),
+    # subject is elsewhere
+    "EPW9ISZR": ("PV_Cell_and_Module_Technologies", "spectral response of cells"),
+    "DWUB2EEL": ("PV_Greenhouses", "light distribution inside a PV greenhouse"),
+    "DUYGXM47": ("PV_System_Performance", "annual yields of different PV technologies"),
+    "TFRZJ9Q6": ("Unsorted", "vitamin D and UV exposure; sits with that candidate"),
     # General PV textbooks caught by an incidental battery/stand-alone mention
     "QM2DVERT": ("PV_Cell_and_Module_Technologies", "general PV textbook, cell-to-system emphasis"),
     "SKMY7GX9": ("PV_Electrical_Design_and_Inverters", "installation and design handbook"),

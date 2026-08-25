@@ -15,7 +15,8 @@ Centred on containerised seedling production in Swedish nurseries and what happe
 ## Pages
 
 - [[Forest_Seedling_Production]] — nursery culture, stock types, fertilisation, seedling quality, storage and storability, vitality tests, root growth.
-- [[Seedling_Cold_Hardiness_and_Dormancy]] — frost and cold hardiness, acclimation, short-day treatment, growth cessation, bud set and burst, freezing tests.
+- [[Photoperiod_and_Dormancy_Induction]] — photoperiodic control of growth and dormancy: short-day and long-night treatment, growth cessation, bud set.
+- [[Frost_Hardiness_and_Freezing_Tests]] — cold acclimation and deacclimation, freezing tolerance, freezing tests, electrolyte leakage, LT50, cold storage.
 - [[Forest_Regeneration]] — planting, site preparation, natural regeneration, shelterwood, survival, establishment, early growth.
 - [[Forest_Damage_and_Herbivory]] — pine weevil, moose and roe deer browsing, frost damage, drought, fire, protection measures.
 - [[Tree_Breeding_and_Propagation]] — breeding programmes, genetic gain, somatic embryogenesis, clonal forestry, provenance and transfer.
