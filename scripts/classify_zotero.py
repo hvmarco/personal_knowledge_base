@@ -431,6 +431,24 @@ NO_PRIOR = {
 # Hand corrections made while writing the pages: the classifier's answer was
 # defensible but wrong on reading the item. Key -> (page, note).
 MANUAL_OVERRIDES = {
+    "XQDQS8L8": ("Photoperiod_and_Dormancy_Induction", "long-night treatment of spruce"),
+    "CDMKG2S3": ("Radiometry_and_Photometry", "ISO 80000-2 quantities and units"),
+    "9479NZIZ": ("Radiometry_and_Photometry", "daylight coefficient model"),
+    "SYNRUYW6": ("Swedish_Forestry", "soil organic carbon in Swedish forests"),
+    "45EWEYW9": ("Swedish_Forestry", "potential Norway spruce production in Sweden"),
+    "ZR3LZS5H": ("Building_Integrated_PV", "residential energy certificates and conservation"),
+    "S5KZKT95": ("Building_Integrated_PV", "fenestration and daylight optimisation"),
+    "FYQTRT7E": ("Greenhouse_Horticulture", "greenhouse shapes review"),
+    "QDNJBQA3": ("Greenhouse_Horticulture", "greenhouse technology textbook"),
+    "94M4KJ97": ("Greenhouse_Horticulture", "diffuse-light cover materials"),
+    "52TCA7AZ": ("Greenhouse_Horticulture", "light transmission in vegetable greenhouses"),
+    "H5VWUKVL": ("Greenhouse_Horticulture", "solar fraction by greenhouse orientation"),
+    "89MKL8PY": ("Greenhouse_Horticulture", "transmission in plastic greenhouses"),
+    "J7RI8899": ("PV_Standards_and_Measurement", "IEC 60904-3 reference spectrum change"),
+    "6E36Z9E5": ("PV_Standards_and_Measurement", "IEC 60904-3 measurement principles"),
+    "QTAQWCVT": ("PV_System_Performance", "regional PV module performance"),
+    "AAEMBZCT": ("Solar_Radiation_Modelling", "SunCalculator angular and spectral distribution"),
+
     "EUTDJ4BW": ("Thin_Film_Solar_Cells", "thin-film solar cell overview"),
     "IU4R9487": ("Thin_Film_Solar_Cells", "materials science of thin films"),
     "JIVVY3FA": ("Thin_Film_Solar_Cells", "CZTS thin films monograph"),
