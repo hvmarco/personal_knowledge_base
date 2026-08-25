@@ -431,6 +431,18 @@ NO_PRIOR = {
 # Hand corrections made while writing the pages: the classifier's answer was
 # defensible but wrong on reading the item. Key -> (page, note).
 MANUAL_OVERRIDES = {
+    "XT2TK2UC": ("Solar_Radiation_Modelling", "sky radiance and luminance distribution models"),
+    "JP3EUWDI": ("Solar_Radiation_Modelling", "sky type determination from illuminance"),
+    "QKSR9LY7": ("Forest_Seedling_Production", "history of Swedish plant production"),
+
+    "BDC5V23W": ("Photosynthesis_and_Gas_Exchange", "the leaf as a photosynthetic system"),
+    "CZXTGX65": ("Greenhouse_Horticulture", "greenhouse engineering textbook"),
+    "TLDEN5CW": ("Greenhouse_Horticulture", "greenhouse crop photosynthesis and dry matter"),
+    "BVYHSWF9": ("Greenhouse_Horticulture", "light transmission in greenhouses"),
+    "NZVDY55V": ("Solar_Radiation_Modelling", "all-weather sky luminance model"),
+    "Y3EHQ9AI": ("Solar_Radiation_Modelling", "Tregenza sky subdivision"),
+    "S7FMSIQK": ("Solar_Radiation_Modelling", "radiation versus cloud amount and type"),
+
     "XQDQS8L8": ("Photoperiod_and_Dormancy_Induction", "long-night treatment of spruce"),
     "CDMKG2S3": ("Radiometry_and_Photometry", "ISO 80000-2 quantities and units"),
     "9479NZIZ": ("Radiometry_and_Photometry", "daylight coefficient model"),
