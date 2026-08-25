@@ -116,12 +116,25 @@ PAGE_RULES = {
     # ---- forestry -----------------------------------------------------------
     "Forest_Seedling_Production": [
         (r"container[ie][sz]ed seedling", 3), (r"nursery|plantskol|plante?skole", 3),
-        (r"stock type", 3), (r"root growth capacity|\brgc\b", 3),
-        (r"seedling quality", 3), (r"mini.?plug", 3), (r"storability|seedling storage", 3),
-        (r"transplant seedling|pre.cultivation", 2), (r"lifting|packing", 1),
-        (r"quickpot|bew[aä]sserungscontainer|\bhiko\b", 3), (r"seedling", 1),
-        (r"root growth potential|\brgp\b|root volume|root fibrosity", 3),
-        (r"stock quality|target seedling|outplant", 3), (r"field performance", 2),
+        (r"stock type", 3), (r"mini.?plug|miniplant", 4),
+        (r"transplant seedling|pre.cultivation|precultivation", 3),
+        (r"quickpot|bew[aä]sserungscontainer|\bhiko\b", 4), (r"seedling", 1),
+        (r"growing media|substrate|sowing|micropropagation", 3),
+        (r"incubator|zephyr", 3),
+    ],
+    "Seedling_Quality_and_Root_Growth_Potential": [
+        (r"root growth potential|root growth capacity|\brgp\b|\brgc\b", 5),
+        (r"target seedling|planting stock quality|stock quality", 4),
+        (r"seedling quality|quality appraisal|quality control in the production", 4),
+        (r"vigou?r test|physiological grading|grading criterion", 4),
+        (r"field performance", 3), (r"root volume|root fibrosity|root regeneration", 3),
+        (r"seed viability|\bvigou?r\b", 2), (r"outplant", 2),
+    ],
+    "Seedling_Storage_and_Handling": [
+        (r"storabilit|lagringsbarhet", 5),
+        (r"(freezer|frozen|cold|winter|field) storage|vinterlagring|frozen.stored", 5),
+        (r"thawing|packaging|packing|seedling processing", 4),
+        (r"storage duration|storage temperature|boxes before planting|lifting", 4),
     ],
     "Forest_Regeneration": [
         (r"site preparation|scarification", 3), (r"shelterwood", 3),
@@ -431,6 +444,10 @@ NO_PRIOR = {
 # Hand corrections made while writing the pages: the classifier's answer was
 # defensible but wrong on reading the item. Key -> (page, note).
 MANUAL_OVERRIDES = {
+    "U9WQCGRD": ("Frost_Hardiness_and_Freezing_Tests", "root freezing tolerance is the subject"),
+    "ESNDJK64": ("Frost_Hardiness_and_Freezing_Tests", "frost hardiness and dormancy readiness"),
+    "HSFCKXJ7": ("Seedling_Quality_and_Root_Growth_Potential", "molecular vitality test"),
+
     "5FIAAHXY": ("Photoinhibition_and_Light_Stress", "acclimation to sun and shade"),
     "CYN2Z3IU": ("Photoinhibition_and_Light_Stress", "acclimation of the photosynthetic apparatus"),
     "B98MCQ7G": ("Photoinhibition_and_Light_Stress", "sun foliage acclimation to shading"),
