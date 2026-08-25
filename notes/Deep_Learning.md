@@ -1,15 +1,15 @@
+---
+tags: [domain/tools-and-methods]
+aliases: [neural networks, foundation models]
+updated: 2026-08-25
+---
 # Deep Learning
 
-
-**Summary**: Notes on deep learning architectures and pretrained models seen in geospatial work.
-**Last updated**: 2026-08-24
+**Summary**: Deep learning architectures and pretrained models, mostly as they appear in geospatial and plant-imaging work.
+**Parent**: [[Tools_and_Methods]] · **Related**: [[Machine_Learning]], [[Embeddings]], [[Remote_Sensing]]
 
 ---
 
-Models referenced so far: YOLO (Delineate-Anything), DINOv3, SAM2, and Prithvi-EO-2.0.
+## Notes
 
-## Related pages
-
-- [[Agriculture]] — see the agribound field boundary toolkit.
-- [[Machine_Learning]]
-- [[Remote_Sensing]]
+- Models referenced so far: YOLO (via Delineate-Anything), DINOv3, SAM2, and Prithvi-EO-2.0. Keywords: object detection, semantic segmentation, vision transformers, geospatial foundation models. Related: [[Agriculture]], [[Remote_Sensing]], [[Machine_Learning]]

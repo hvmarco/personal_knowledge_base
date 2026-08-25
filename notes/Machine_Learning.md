@@ -1,14 +1,15 @@
+---
+tags: [domain/tools-and-methods]
+aliases: [ML, statistical learning]
+updated: 2026-08-25
+---
 # Machine Learning
 
-
-**Summary**: Notes on machine learning methods and models, including geospatial foundation models and their downstream use.
-**Last updated**: 2026-08-24
+**Summary**: Machine learning methods and models, including geospatial foundation models and their downstream use.
+**Parent**: [[Tools_and_Methods]] · **Related**: [[Deep_Learning]], [[Embeddings]], [[Statistics_and_Data_Analysis]]
 
 ---
 
-## Related pages
+## Notes
 
-- [[Remote_Sensing]] — geospatial foundation models and the embeddings they produce.
-- [[Deep_Learning]] — segmentation and detection architectures.
-- [[Embeddings]]
-- [[Climate_Change]]
+- (newest first)

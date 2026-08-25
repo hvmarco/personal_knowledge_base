@@ -1,15 +1,15 @@
+---
+tags: [domain/tools-and-methods]
+aliases: [pandas, xarray]
+updated: 2026-08-25
+---
 # Python
 
-
-**Summary**: Notes on Python packages and tooling, mostly geospatial and data processing libraries.
-**Last updated**: 2026-08-24
+**Summary**: General Python and the data-processing stack — pandas, xarray, notebooks, packaging. Geospatial libraries live on [[Geospatial_Python]]; PV libraries on [[PV_Modelling_Tools]].
+**Parent**: [[Tools_and_Methods]] · **Related**: [[Geospatial_Python]], [[Data]], [[Statistics_and_Data_Analysis]]
 
 ---
 
-Packages referenced so far: agribound (field boundary delineation, Apache 2.0, Python 3.10+, Dask-based parallelization, Python API plus CLI).
+## Notes
 
-## Related pages
-
-- [[Agriculture]] — see the agribound note.
-- [[Remote_Sensing]]
-- [[Data]]
+- Packages referenced so far: agribound (field boundary delineation, Apache 2.0, Python 3.10+, Dask-based parallelisation, Python API plus CLI). Keywords: packaging, CLI, Dask, parallelisation. Related: [[Agriculture]], [[Remote_Sensing]]

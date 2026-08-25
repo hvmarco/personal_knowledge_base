@@ -1,16 +1,15 @@
+---
+tags: [domain/tools-and-methods]
+aliases: [earth embeddings, geospatial embeddings]
+updated: 2026-08-25
+---
 # Embeddings
 
-
-**Summary**: Notes on embedding representations, with a focus on Earth/geospatial embedding products and how they are stored and distributed.
-**Last updated**: 2026-08-24
+**Summary**: Embedding representations, with a focus on Earth observation embedding products and how they are stored, quantized and distributed.
+**Parent**: [[Tools_and_Methods]] · **Related**: [[Machine_Learning]], [[Remote_Sensing]], [[Data]]
 
 ---
 
-Earth embedding products seen in these notes so far: Clay, Major TOM, Earth Index, Copernicus-Embed, Presto, Tessera, AlphaEarth, and Google Satellite Embeddings. Recurring themes are format fragmentation, storage cost at 10m pixel-level resolution, int8 quantization, and weak temporal coverage (mostly annual composites).
+## Notes
 
-## Related pages
-
-- [[Remote_Sensing]] — see the note on the technical debt of Earth embedding products.
-- [[Agriculture]] — embeddings used as inputs for field boundary delineation.
-- [[Machine_Learning]]
-- [[Data]]
+- Earth embedding products seen so far: Clay, Major TOM, Earth Index, Copernicus-Embed, Presto, Tessera, AlphaEarth and Google Satellite Embeddings. Recurring themes are format fragmentation, storage cost at 10 m pixel-level resolution, int8 quantization, and weak temporal coverage (mostly annual composites). Keywords: earth embeddings, quantization, storage cost, interoperability, annual composites. Related: [[Remote_Sensing]], [[Data]], [[Agriculture]]

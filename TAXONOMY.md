@@ -170,10 +170,53 @@ Expected pressure points after the Zotero import (likely to pass ~80 bullets and
 - `#crop/`: lettuce, tomato, cucumber, basil, ornamentals, (add as met)
 - `#type/` (mainly bookmarks): tool, course, tutorial, dataset, portal, api, regulation, reference, video
 - `#status/`: unread, read, todo
-- `#project/`: light-model, msc-thesis (+ `/4-1` etc.), course-reading, `<site-slug>` for solar-park site folders
+- `#project/`: light-model, msc-thesis (+ `/4-1`, `/4-2`, `/4-13`, `/4-14`), thesis, own-publications, zephyr, course-reading, `<site-slug>` for solar-park site folders
 - `#needs-review`, `#needs-topic`, `#removed-from-zotero`
+- Frontmatter `tags:` on every page carries its domain as `domain/<slug>`: photovoltaics, solar-park-development, agrivoltaics, energy-systems, plant-photobiology, controlled-environment-agriculture, forestry, geospatial, data-sources, tools-and-methods, themes, other-topics. MOC pages add `moc`.
 
 ## Source mappings
+
+### Zotero transport
+
+The library is exported as Better BibTeX JSON (`raw/Zotero_library.json`), not CSV: the JSON carries the 87-collection tree and child notes, and 1300 of 1408 items sit in at least one collection. Collection path is therefore the primary classification signal; only the 13 mixed collections listed below and the 108 uncollected items fall through to keyword rules. The CSV export is superseded and archived in `processed/`.
+
+### Zotero collections → pages
+
+The full mapping lives in `scripts/classify_zotero.py` (`COLLECTION_RULES`). Shape of it:
+
+| Zotero collection | Primary page |
+|---|---|
+| `1 Ligh Spectra and Light Intensity`, `Light spectra and field trial`, `R:FR`, `Spectra`, `UV`, `Photomorphogenesis` | `Light_Quality_and_Photomorphogenesis` |
+| `Light Intensity and gas exchange`, `G.Ex - Light response curves`, `1.1.1 Photosynthesis`, `1.1.2 Gas Ex. and Ch. F.` | `Photosynthesis_and_Plant_Physiology` |
+| `2 Long night treatment` | `Seedling_Cold_Hardiness_and_Dormancy` |
+| `3 Light shock` | `Photoinhibition_and_Light_Stress` (proposed) |
+| `4 DLI and supplementary light` + subfolders, `LED for Plants`, `DLI` | `Horticultural_Lighting` |
+| `05 Greenhouse energy`, `2.1 Greenhouses and Growth chambers`, `Growth chambers` | `Greenhouse_Horticulture` |
+| `5 Agrivoltacis`, `5.3.3 Agrivoltaics` | `Agrivoltaics` |
+| `Energy calculation`, `4.1 Solar Radiation`, `5.0 TÜV Mustergutachten` | `Solar_Radiation_Modelling` |
+| `Solar Greenhouse` | `PV_Greenhouses` |
+| `6 Image and color analysis`, `Image analysis and Phenotyping`, `Photobox` | `Plant_Phenotyping_and_Image_Analysis` |
+| `1.1 Seedling Performance`, `1.1.3 RGC`, `2.4 Zephyr Project` | `Forest_Seedling_Production` |
+| `2 Forest regeneration` | `Forest_Regeneration` |
+| `3 Somatic embryos` | `Tree_Breeding_and_Propagation` |
+| `2.2 Vertical Farming` | `Vertical_Farming_and_Urban_Agriculture` |
+| `5.2.1 PV cells and modules`, `5 - PV modules`, `5.3.2 mini-PV for indoors` | `PV_Cell_and_Module_Technologies` |
+| `5.4 PV Performance and Monitoring`, `5.5 PV Losses` (+ angular, degradation, thermal), `5.1.1 PV-Mexico` | `PV_System_Performance` |
+| `5.3.1 PV Standards` | `PV_Standards_and_Measurement` |
+| `5.5.2 Shading losses`, `5.5.4 Low light` | `PV_Shading_and_Mismatch` |
+| `5.5.6 Soiling and Snow`, `5.1.2 PV-Sweden` | `PV_in_Nordic_Climates` |
+| `5.2.3 Bifacial`, `5.5.7 Albedo` | `Bifacial_PV_and_Albedo` |
+| `5.2.2 Inverters and batteries`, `5.2.4 Cables`, `5.3 PV systems design` | `PV_Electrical_Design_and_Inverters` |
+| `5.6 PV software` | `PV_Modelling_Tools` |
+| `5.7 PV Repowering`, `5.11 LCA` | `PV_Economics_and_LCA` |
+| `5.8 BOS materials` | `Site_Layout_and_Civil_Design` |
+| `5.9 PV forescasting`, `5.10 PV ramp control` | `PV_Forecasting_and_Ramp_Control` (proposed) |
+| `5.12 PV health risks`, `Reflection` | `Permitting_and_Environmental_Assessment` |
+| `1.4 Wind energy in forest` | `Energy_Transition_and_Scenarios` |
+| `7 Statistics` | `Statistics_and_Data_Analysis` |
+| `2.3 Entoculture`, `Water and population`, `Medicinal plants` | `Unsorted` (candidates) |
+
+Mixed collections, where keyword rules run first and the collection only supplies a fallback: `0 Articles`, `0 Thesis`, `6 Thesis`, `1 Forestry`, `2 Controlled Environment Agriculture`, `3 Photobiology`, `4 Energy`, `5 Photovoltaics`, `5.1 PV general data`, `5.2 PV components`, `06 Data`, `99 Other`, `Material and equipment used`, `Own publications`.
 
 ### Zotero manual tags → vault tags
 - `main model`, `supporting info` → `#project/light-model` (+ `#supporting-info`)
@@ -207,3 +250,4 @@ Expected pressure points after the Zotero import (likely to pass ~80 bullets and
 
 ## Changelog
 - 2026-08-25 — Seeded from Zotero export (`My_Library.csv`) and bookmarks export (`bookmarks_8_25_26.html`). 12 domains (incl. Other_Topics), 66 topic pages.
+- 2026-08-25 — Zotero transport switched to Better BibTeX JSON; added the *Zotero transport* and *Zotero collections → pages* sections. Created the 12 MOC pages and `Unsorted`. Migrated the 10 pre-taxonomy pages to the new format; renamed `Energy_Markets` → `Electricity_Markets_and_Prices` (old name kept as an alias). Added `domain/` frontmatter tags and the `#project/` values thesis, own-publications, zephyr. Four new pages proposed in `index.md` (`Photoinhibition_and_Light_Stress`, `Radiometry_and_Photometry`, `PV_Forecasting_and_Ramp_Control`, `Phenology_and_Thermal_Time`), plus six split proposals — none created yet.
