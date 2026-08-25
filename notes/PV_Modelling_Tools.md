@@ -1,0 +1,29 @@
+---
+tags: [domain/tools-and-methods]
+aliases: [pvlib, PVsyst, SAM, PySAM, PVMAPS, solaR]
+updated: 2026-08-25
+---
+# PV Modelling Tools
+
+**Summary**: Software for modelling PV — pvlib, PySAM and SAM, PVsyst, Meteonorm and PVGIS tooling. Method papers go to the thematic page; this is about the tools themselves.
+**Parent**: [[Tools_and_Methods]] · **Related**: [[Solar_Radiation_Modelling]], [[PV_System_Performance]], [[Solar_and_Weather_Data]]
+
+---
+
+## Notes
+
+- **[pvlib python: a python package for modeling solar energy systems](https://doi.org/10.21105/joss.00884)** — Holmgren et al. (2018), *Journal of Open Source Software*. The reference citation for pvlib: an open, community-maintained implementation of the standard irradiance, position, temperature and module models. The backbone of most Python PV work in this vault. Keywords: pvlib, open source, Python, modelling stack. Related: [[Solar_Radiation_Modelling]], [[Python]]. [zotero](zotero://select/library/items/4JB8MV4G) #type/tool #project/light-model
+- **[PVsyst](http://www.pvsyst.com/en/)** — PVsyst SA (2018). The commercial package for sizing, simulating and analysing complete PV systems, including 3D near-shading scenes. The de-facto reference in bankability documents. Keywords: PVsyst, simulation, shading scenes, sizing. Related: [[PV_System_Performance]], [[Site_Layout_and_Civil_Design]]. [zotero](zotero://select/library/items/U9ZQ8Q9I) #type/tool
+- **PV Simulation Software comparisons: PVSYST, NREL SAM and PVLIB** — Gurupira & Rix (2017). Side-by-side comparison of the three main simulation packages on the same system, which is the honest way to see where the model assumptions diverge. Keywords: software comparison, PVsyst, SAM, pvlib, validation. Related: [[PV_System_Performance]]. [zotero](zotero://select/library/items/3ISRHYYM)
+- **[PVMAPS: Software tools and data for the estimation of solar radiation and photovoltaic module performance over large geographical areas](https://doi.org/10.1016/j.solener.2016.12.014)** — Huld (2017), *Solar Energy*. The engine behind PVGIS, released as GRASS GIS modules plus climatic data, so irradiance and PV performance can be computed for whole regions at arbitrary resolution on inclined or tracking surfaces. Keywords: PVMAPS, GRASS GIS, regional modelling, PVGIS. Related: [[Geospatial_Python]], [[Solar_and_Weather_Data]]. [zotero](zotero://select/library/items/PCLBM2SJ) #type/tool
+- **[Accuracy analysis of software for the estimation and planning of photovoltaic installations](https://doi.org/10.1007/s40095-014-0071-y)** — Axaopoulos et al. (2014), *International Journal of Energy and Environmental Engineering*. Benchmarks TRNSYS, Archelios, Polysun, PVSyst, PV*SOL and PVGIS against the measured output of a 19.8 kWp grid-connected plant using on-site climate data for the same year. Keywords: software accuracy, benchmark, measured comparison, planning tools. Related: [[PV_System_Performance]], [[Solar_and_Weather_Data]]. [zotero](zotero://select/library/items/IY48Q2XS)
+- **[PVSYST 6 — User's Manual](http://www.pvsyst.com/images/pdf/PVsyst_Tutorials.pdf)** — Mermoud & Wittmer (2014). The manual, worth keeping because it documents the loss-model definitions and default assumptions that PVsyst reports are built on. Keywords: PVsyst manual, loss model, defaults, documentation. Related: [[PV_System_Performance]]. [zotero](zotero://select/library/items/EAFHHMFC) #type/reference
+- **solaR: Solar radiation and photovoltaic systems with R** — Perpiñán Lamigueiro (2012), *Journal of Statistical Software*. The R equivalent of pvlib: radiation decomposition, transposition and PV system output, with the paper doubling as documentation. Keywords: solaR, R package, radiation modelling, PV output. Related: [[R]], [[Solar_Radiation_Modelling]]. [zotero](zotero://select/library/items/GT2DL3FW) #type/tool
+- **[Characteristics of a PV Module, model description](http://files.pvsyst.com/help/index.html)** — PVsyst SA (2012). PVsyst's own description of its one-diode module model and how the datasheet parameters map onto it — the place to check what the software is actually doing. Keywords: one-diode model, module parameters, PVsyst help. Related: [[PV_Cell_and_Module_Technologies]]. [zotero](zotero://select/library/items/HJ2CI8HR) #type/reference
+- **[EnergyPlus: a new-generation building energy simulation program](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.116.4331&rep=rep1&type=pdf)** — Crawley et al. (2001). Introduces EnergyPlus as a ground-up redesign of the older building energy simulation codes, with integrated loads, systems and plant solution. Keywords: EnergyPlus, building energy simulation, integrated solution. Related: [[Greenhouse_Horticulture]]. [zotero](zotero://select/library/items/NS6MHKS7) #needs-review
+- **[EnergyPlus: energy simulation program](http://search.proquest.com/openview/e9bc3749fef79c2e58edb66bba78f368/1)** — Crawley et al. (2000), *ASHRAE Journal*. The ASHRAE-facing introduction to the same program, arguing that the 1960s-era simulation codes then in use needed replacing rather than extending. Keywords: EnergyPlus, ASHRAE, building simulation. Related: [[Greenhouse_Horticulture]]. [zotero](zotero://select/library/items/VHXU4E9L) #needs-review
+- **[PVMAPS: a software suite for estimating solar radiation and PV performance over geographical regions](http://re.jrc.ec.europa.eu/pvmaps/index.html)** — JRC, n.d. The distribution page for the PVMAPS suite and its data. Keywords: PVMAPS, JRC, download, regional PV. Related: [[Solar_and_Weather_Data]]. [zotero](zotero://select/library/items/YT3GL2DB) #type/tool
+
+## Candidate: Building Energy Simulation
+
+The two EnergyPlus items above are building-energy tools rather than PV tools, and are parked here until a third joins them — the natural host would be a page shared with [[Greenhouse_Horticulture]].

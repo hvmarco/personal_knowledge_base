@@ -410,6 +410,16 @@ NO_PRIOR = {
 # Hand corrections made while writing the pages: the classifier's answer was
 # defensible but wrong on reading the item. Key -> (page, note).
 MANUAL_OVERRIDES = {
+    # General PV textbooks caught by an incidental battery/stand-alone mention
+    "QM2DVERT": ("PV_Cell_and_Module_Technologies", "general PV textbook, cell-to-system emphasis"),
+    "SKMY7GX9": ("PV_Electrical_Design_and_Inverters", "installation and design handbook"),
+    "9AD5SEPG": ("PV_Electrical_Design_and_Inverters", "systems engineering textbook"),
+    # keep the ramp-control cluster together
+    "756KLULT": ("PV_Forecasting_and_Ramp_Control", "ramp-rate control; sits with Marcos and Makibar"),
+    # not PV, not LCA
+    "B4BKRANY": ("Energy_Transition_and_Scenarios", "low-carbon technology trade-offs, not PV economics"),
+    "4WVBVWDV": ("Unsorted", "edible insects; belongs with the entoculture candidate"),
+    "4JURZID6": ("Lighting_Strategy_and_Control", "lighting economics, not PV economics"),
     "B72IY295": ("Vertical_Farming_and_Urban_Agriculture",
                  "subject is powering indoor cultivation, not grid penetration"),
     "328P62TM": ("Solar_and_Weather_Data",
@@ -432,8 +442,8 @@ TAG_MAP = {
 }
 
 SPECIES_HINTS = [
-    (r"picea abies|norway spruce|gran\b", "#species/picea-abies"),
-    (r"pinus sylvestris|scots pine|tall\b", "#species/pinus-sylvestris"),
+    (r"picea abies|norway spruce|\bgran\b(?!t)", "#species/picea-abies"),
+    (r"pinus sylvestris|scots pine|\btall(?:en|ar)?\b(?= och gran| och tall)", "#species/pinus-sylvestris"),
     (r"pinus contorta|lodgepole", "#species/pinus-contorta"),
     (r"betula|birch", "#species/betula"),
 ]
