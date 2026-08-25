@@ -14,7 +14,7 @@ ROOT = Path(__file__).resolve().parent.parent
 MAP = ROOT / "processed" / "Zotero_library_map.csv"
 SRC = ROOT / "raw" / "Zotero_library.json"
 
-ABSTRACT_CHARS = 480
+ABSTRACT_CHARS = 340
 
 
 def load():

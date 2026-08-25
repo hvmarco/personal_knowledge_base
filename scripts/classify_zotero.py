@@ -179,6 +179,21 @@ PAGE_RULES = {
         (r"(module|cell) efficienc", 3), (r"indoor (pv|photovoltaic)|energy harvesting", 3),
         (r"solar cell", 2), (r"module technolog", 3),
     ],
+    "Thin_Film_Solar_Cells": [
+        (r"czts|cu2znsns|cu2snss|cu2cdsnse|kesterite|stannite", 4),
+        (r"cigs|cu\(in|chalcopyrite|chalcogenide|cgs", 4),
+        (r"buffer layer|back contact|absorber layer|cds", 4),
+        (r"sputter|vapou?r deposition|vacuum evaporation|electroplat", 3),
+        (r"quantum dot|nanocrystal|colloidal synthesis", 3),
+        (r"thin.film solar cell|thin film solar cell", 3),
+        (r"molybdenum|mo thin film", 2),
+    ],
+    "Indoor_PV_and_Energy_Harvesting": [
+        (r"indoor (photovoltaic|pv|energy|illumination|light|applicat)", 4),
+        (r"energy harvest", 4),
+        (r"mm.scale|millimet(er|re).scale|wireless sensor node|body sensor", 4),
+        (r"artificial light source", 3), (r"low.power (system|electronic|circuit)", 2),
+    ],
     "Bifacial_PV_and_Albedo": [
         (r"bifacial", 3), (r"albedo", 3), (r"rear.side|backside irradiance", 3),
         (r"ground reflect", 3),

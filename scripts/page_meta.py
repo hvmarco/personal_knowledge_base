@@ -35,6 +35,14 @@ PAGES = {
         "photovoltaics", "Photovoltaics",
         ["solar cells", "thin film", "module technology", "indoor PV"],
         "Cell and module technologies: crystalline silicon, thin film, organic and semi-transparent PV, and indoor and low-light energy harvesting."),
+    "Thin_Film_Solar_Cells": (
+        "photovoltaics", "Photovoltaics",
+        ["CIGS", "CZTS", "chalcogenide", "thin film"],
+        "Thin-film absorber materials and how they are made: CIGS and CZTS chemistry, buffer and back-contact layers, sputtering and evaporation processes, and the device results that follow."),
+    "Indoor_PV_and_Energy_Harvesting": (
+        "photovoltaics", "Photovoltaics",
+        ["indoor PV", "energy harvesting", "low-light PV"],
+        "PV under artificial and low light: indoor cell characterisation, the missing standard test conditions for it, and millimetre-scale energy harvesting for sensor nodes."),
     "Bifacial_PV_and_Albedo": (
         "photovoltaics", "Photovoltaics",
         ["bifacial", "albedo", "rear-side irradiance"],

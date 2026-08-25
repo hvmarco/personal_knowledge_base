@@ -14,8 +14,10 @@ Everything about how PV cells, modules and systems behave and what they cost. Mo
 
 ## Pages
 
-- [[Solar_Radiation_Modelling]] — solar position, transposition, decomposition models, sky models, radiation databases.
-- [[PV_System_Performance]] — performance ratio, yield, monitoring, degradation, faults, soiling, analysis tools.
+- [[Solar_Radiation_Modelling]] — solar position, transposition, decomposition models, sky models.
+- [[PAR_and_Spectral_Radiation]] — PAR and PPFD, quanta versus energy, spectral distribution and its instruments.
+- [[PV_System_Performance]] — performance ratio, yield, monitoring, performance modelling, technical risk.
+- [[PV_Degradation_and_Reliability]] — degradation rates, faults and failure modes, soiling, inspection and O&M.
 - [[PV_Shading_and_Mismatch]] — partial shading, weak light, bypass diodes, array and string configurations.
 - [[PV_Standards_and_Measurement]] — IEC 60904, STC, I–V characterisation, spectral mismatch, energy rating.
 - [[PV_Cell_and_Module_Technologies]] — crystalline Si, thin film, organic and semi-transparent PV, indoor PV.
@@ -24,3 +26,6 @@ Everything about how PV cells, modules and systems behave and what they cost. Mo
 - [[Building_Integrated_PV]] — BIPV, rooftop and façade systems, self-consumption, rooftop potential mapping.
 - [[PV_Economics_and_LCA]] — LCOE, techno-economic analysis, life-cycle assessment, incentives, financial metrics.
 - [[Energy_Storage]] — batteries with PV, off-grid and stand-alone systems, microgrids, storage sizing.
+- [[Thin_Film_Solar_Cells]] — CIGS and CZTS chemistry, buffer and back-contact layers, sputtering and evaporation.
+- [[Indoor_PV_and_Energy_Harvesting]] — PV under artificial light, indoor characterisation, mm-scale harvesting.
+- [[PV_Forecasting_and_Ramp_Control]] — probabilistic forecasting, nowcasting, ramp-rate limitation and power smoothing.
