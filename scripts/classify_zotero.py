@@ -431,6 +431,11 @@ NO_PRIOR = {
 # Hand corrections made while writing the pages: the classifier's answer was
 # defensible but wrong on reading the item. Key -> (page, note).
 MANUAL_OVERRIDES = {
+    "5FIAAHXY": ("Photoinhibition_and_Light_Stress", "acclimation to sun and shade"),
+    "CYN2Z3IU": ("Photoinhibition_and_Light_Stress", "acclimation of the photosynthetic apparatus"),
+    "B98MCQ7G": ("Photoinhibition_and_Light_Stress", "sun foliage acclimation to shading"),
+    "YE6GPYT2": ("Photoinhibition_and_Light_Stress", "thylakoid organisation in sun/shade acclimation"),
+
     "TM4UUL4V": ("Forestry_and_Agriculture_Statistics", "Swedish seedling production statistics"),
     "YVT58ZPK": ("Forest_Seedling_Production", "transplanting and packaging systems"),
     "92TYKDCX": ("Forest_Seedling_Production", "seed and plant production handbook"),
@@ -785,6 +790,7 @@ def main():
             tags.append("#type/tool")
 
         doi = (it.get("DOI") or "").strip()
+        doi = re.sub(r"^https?://(dx\.)?doi\.org/", "", doi)
         link = "https://doi.org/" + doi if doi else (it.get("url") or "")
 
         rows.append({
