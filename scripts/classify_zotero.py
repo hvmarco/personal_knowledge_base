@@ -187,6 +187,10 @@ PAGE_RULES = {
         (r"quantum dot|nanocrystal|colloidal synthesis", 3),
         (r"thin.film solar cell|thin film solar cell", 3),
         (r"molybdenum|mo thin film", 2),
+        (r"cuinse2|cuin\(|cu\(in|cu2snс|cis cell|cd.free buffer", 4),
+        (r"chemical bath deposition|cbd|co.?evaporat|multisource|sublimation", 3),
+        (r"thin.films?", 2), (r"cdte|perovskite|cigs|a-si|amorphous silicon", 3),
+        (r"band structure|absorption coefficient|refractive index|doping (limit|pinning)", 2),
     ],
     "Indoor_PV_and_Energy_Harvesting": [
         (r"indoor (photovoltaic|pv|energy|illumination|light|applicat)", 4),
@@ -427,6 +431,21 @@ NO_PRIOR = {
 # Hand corrections made while writing the pages: the classifier's answer was
 # defensible but wrong on reading the item. Key -> (page, note).
 MANUAL_OVERRIDES = {
+    "EUTDJ4BW": ("Thin_Film_Solar_Cells", "thin-film solar cell overview"),
+    "IU4R9487": ("Thin_Film_Solar_Cells", "materials science of thin films"),
+    "JIVVY3FA": ("Thin_Film_Solar_Cells", "CZTS thin films monograph"),
+    "VY6L9TVD": ("Thin_Film_Solar_Cells", "CZTS technology trends"),
+    "BESHFTAB": ("Thin_Film_Solar_Cells", "all-sputtering CIGS process"),
+    "KMK89DIF": ("Thin_Film_Solar_Cells", "CIGS on enamelled steel"),
+    "LHHC65TF": ("Thin_Film_Solar_Cells", "flexible CIGS on stainless steel"),
+    "TDCRP6YX": ("Thin_Film_Solar_Cells", "chalcopyrite deposition apparatus patent"),
+    "8HQQ4T2G": ("Thin_Film_Solar_Cells", "evaporation processes chapter"),
+    "34TSWHA8": ("Thin_Film_Solar_Cells", "deposition technologies handbook"),
+    "M9LLWMEC": ("Thin_Film_Solar_Cells", "doping limits in II-VI and I-III-VI2"),
+    "2Z7MV44C": ("Thin_Film_Solar_Cells", "CdTe technology page"),
+    "U6KZXEKX": ("Thin_Film_Solar_Cells", "CIGS manufacturer product page"),
+    "NUC5RRJP": ("Thin_Film_Solar_Cells", "thin-film module measurement artefacts"),
+
     # The msc-thesis Mexico section is electricity-market and policy material,
     # not PV performance
     "TQ5BXRGR": ("Electricity_Markets_and_Prices", "Mexican interconnection contract statistics"),
