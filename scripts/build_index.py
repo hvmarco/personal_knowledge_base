@@ -8,6 +8,7 @@ the bookkeeping sections from the map and from what has actually been written.
 Usage:  python scripts/build_index.py
 """
 import csv
+import io
 import re
 from collections import Counter, defaultdict
 from pathlib import Path
@@ -133,8 +134,16 @@ def main():
 
     out += ["## Proposed domains", "", "None.", ""]
 
-    needs_review = sum(1 for r in rows if "#needs-review" in r["tags"])
-    needs_topic = sum(1 for r in rows if "#needs-topic" in r["tags"])
+    # count what is actually written on the pages: a #needs-review flag is
+    # often on a sub-bullet (a duplicate Zotero record), not in the map tags
+    written = []
+    for f in sorted(NOTES.glob('*.md')):
+        if f.name in ('index.md', 'log.md'):
+            continue
+        written.append(io.open(str(f), encoding='utf-8').read())
+    written = chr(10).join(written)
+    needs_review = written.count('#needs-review')
+    needs_topic = written.count('#needs-topic')
     written = sum(n for _, (_, is_moc, _, n, _) in infos.items() if not is_moc)
     out += ["## Needs attention", "",
             "- Zotero items mapped: {} · bullets written: {}".format(len(rows), written),

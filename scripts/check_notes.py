@@ -23,7 +23,20 @@ NOTES = ROOT / "notes"
 MAP = ROOT / "processed" / "Zotero_library_map.csv"
 
 KEY_RE = re.compile(r"zotero://select/library/items/([A-Z0-9]{8})")
-LINK_RE = re.compile(r"\*\*\[[^\]]*\]\(([^)]+)\)\*\*")
+LINK_RE = re.compile(r"\*\*\[[^\]]*\]\(((?:[^()]|\([^()]*\))+)\)\*\*")
+# keys whose Zotero link is unusable (malformed, paywalled storefront, a DOI
+# whose characters break markdown links) and is therefore deliberately not written
+LINK_EXEMPT = {
+    "79488T2I",  # doubled DNV GL url
+    "3ISRHYYM",  # bare "http://dx.doi.org/"
+    "F5PB6CBD",  # relative path, no host
+    "43V8S8JD",  # amazon product page
+    "BKJEZPMI",  # amazon product page
+    "PSUASKH9",  # amazon product page
+    "XISJB62T",  # bare "www.irena.org/remap", no scheme
+    "3Z3GHCBY",  # DOI contains <> and (), breaks the markdown link
+}
+
 WIKI_RE = re.compile(r"\[\[([^\]|#]+)")
 
 
@@ -82,6 +95,12 @@ def main():
                 if not expected:
                     problems.append("{}: key {} has no link in the map but the note links to {}".format(
                         page, keys[0], got))
+            elif keys:
+                # the map holds a usable link but the note wrote none
+                row = by_key.get(keys[0]) or {}
+                if row.get("link", "").strip() and keys[0] not in LINK_EXEMPT:
+                    problems.append("{}: key {} has a link in the map that the note does not use, map: {}".format(
+                        page, keys[0], row["link"]))
         if page_has_notes:
             written_pages.add(page)
 
