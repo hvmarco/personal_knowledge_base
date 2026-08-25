@@ -120,6 +120,8 @@ PAGE_RULES = {
         (r"seedling quality", 3), (r"mini.?plug", 3), (r"storability|seedling storage", 3),
         (r"transplant seedling|pre.cultivation", 2), (r"lifting|packing", 1),
         (r"quickpot|bew[aä]sserungscontainer|\bhiko\b", 3), (r"seedling", 1),
+        (r"root growth potential|\brgp\b|root volume|root fibrosity", 3),
+        (r"stock quality|target seedling|outplant", 3), (r"field performance", 2),
     ],
     "Forest_Regeneration": [
         (r"site preparation|scarification", 3), (r"shelterwood", 3),
@@ -151,7 +153,7 @@ PAGE_RULES = {
     # ---- photovoltaics ------------------------------------------------------
     "PV_System_Performance": [
         (r"performance ratio", 3), (r"yield assessment|energy yield", 3),
-        (r"outdoor performance|field performance", 3), (r"pv (plant|system) performance", 3),
+        (r"outdoor performance", 3), (r"pv (plant|system) performance", 3),
         (r"monitoring", 2), (r"real operating condition", 3), (r"performance", 1),
     ],
     "PV_Degradation_and_Reliability": [
@@ -410,6 +412,22 @@ NO_PRIOR = {
 # Hand corrections made while writing the pages: the classifier's answer was
 # defensible but wrong on reading the item. Key -> (page, note).
 MANUAL_OVERRIDES = {
+    # The msc-thesis Mexico section is electricity-market and policy material,
+    # not PV performance
+    "TQ5BXRGR": ("Electricity_Markets_and_Prices", "Mexican interconnection contract statistics"),
+    "WRL2AAHP": ("Electricity_Markets_and_Prices", "Mexican electricity market rules"),
+    "8A88G588": ("Electricity_Markets_and_Prices", "Mexican energy reform, wholesale market"),
+    "3ZSQM3CB": ("Electricity_Markets_and_Prices", "Mexican electricity sector law"),
+    "JP4DJCHJ": ("Electricity_Markets_and_Prices", "grid parity monitor"),
+    "XISJB62T": ("Electricity_Markets_and_Prices", "IRENA REmap scenario for Mexico"),
+    "RD2JE35S": ("PV_Economics_and_LCA", "regional solar potential and its economics"),
+    # not PV
+    "X6T59667": ("Light_Quality_and_Photomorphogenesis", "light spectra in seedling pre-cultivation"),
+    "TBGLIQ5W": ("Building_Integrated_PV", "office plug loads; building energy candidate"),
+    "NS6MHKS7": ("Building_Integrated_PV", "EnergyPlus; building energy candidate"),
+    "VHXU4E9L": ("Building_Integrated_PV", "EnergyPlus; building energy candidate"),
+    # duplicate of RMBFUMGJ
+    "P26435V2": ("Site_Layout_and_Civil_Design", "duplicate IFC developer guide"),
     # The MSc-thesis book shelf landed together on the electrical page; split it
     # by what each book is actually about.
     "UTF9EDHH": ("PV_Cell_and_Module_Technologies", "physics of solar energy textbook"),
