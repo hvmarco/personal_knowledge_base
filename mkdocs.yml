@@ -77,6 +77,7 @@ nav:
     - PV Electrical Design and Inverters: PV_Electrical_Design_and_Inverters.md
     - Permitting and Environmental Assessment: Permitting_and_Environmental_Assessment.md
     - Site Layout and Civil Design: Site_Layout_and_Civil_Design.md
+    - Noise Modelling: Noise_Modelling.md
   - Agrivoltaics:
     - Agrivoltaics_and_Dual_Use.md
     - Agrivoltaics: Agrivoltaics.md
@@ -145,6 +146,8 @@ nav:
     - Deep Learning: Deep_Learning.md
     - Embeddings: Embeddings.md
     - Data: Data.md
+    - Data Visualization: Data_Visualization.md
+    - Agentic Coding: Agentic_Coding.md
   - Themes:
     - Themes.md
     - Agriculture: Agriculture.md

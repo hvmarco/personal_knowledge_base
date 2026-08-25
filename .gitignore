@@ -3,9 +3,6 @@
 __pycache__/
 *.pyc
 
-# Ingestion-pipeline source clippings — never tracked
-processed/
-
 # MkDocs build output
 site/
 

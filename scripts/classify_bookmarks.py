@@ -236,6 +236,7 @@ STRIP_AFTER = [
     "https://www.energy-charts.info/charts/price_spot_market/chart.htm",
     "https://www.smhi.se/data/meteorologi/ladda-ner-meteorologiska-observationer",
     "https://app.electricitymap.org/zone/ES",
+    "https://www.dlubal.com/en/load-zones-for-snow-wind-earthquake/wind-bfs-201310-eks-9.html",
 ]
 
 
