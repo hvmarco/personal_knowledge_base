@@ -444,6 +444,23 @@ NO_PRIOR = {
 # Hand corrections made while writing the pages: the classifier's answer was
 # defensible but wrong on reading the item. Key -> (page, note).
 MANUAL_OVERRIDES = {
+    "YKHJ8BZ8": ("Swedish_Forestry", "rhizosphere priming and soil carbon under spruce and pine"),
+    "A9P7CV62": ("Forest_Regeneration", "success of autumn plantings"),
+    "C696VSZB": ("Seedling_Quality_and_Root_Growth_Potential", "history of the target plant concept"),
+    "463TABPK": ("Seedling_Quality_and_Root_Growth_Potential", "the target plant concept"),
+    "TFQKAJEH": ("Agriculture", "agricultural drought modelling in Sweden"),
+    "BN7PXHLL": ("Agrivoltaics", "agrophotovoltaic systems review"),
+    "GE7RZ8ND": ("Agrivoltaics", "agrivoltaics with adaptive LED lighting"),
+    "STH4KXME": ("Energy_Transition_and_Scenarios", "solar in a district heating network"),
+    "6PCE7AXD": ("Unsorted", "map pin, no subject"),
+    "EVG4E6VT": ("Climate_Change", "length of the vegetation period"),
+    "8CSDYNWS": ("Photosynthesis_and_Gas_Exchange", "net ecosystem exchange and cloudiness"),
+    "LPZ33Q5R": ("Light_Quality_and_Photomorphogenesis", "plant-plant signalling and shade avoidance"),
+    "B4MT4W4E": ("Radiometry_and_Photometry", "ISO 21348 solar irradiance determination"),
+    "XJFU6FS8": ("PAR_and_Spectral_Radiation", "solar, net and photosynthetic radiation"),
+    "2MYHIJLA": ("Solar_Radiation_Modelling", "minute-value irradiance generation"),
+    "EH5AENCA": ("Photoperiod_and_Dormancy_Induction", "photoperiod extension light sources"),
+
     "TQDFZ7NX": ("Unsorted", "prebiotic photochemistry; origin-of-life cluster"),
     "DEE9S9TZ": ("Unsorted", "forest use and environmental attitudes, Balearics"),
     "MZ23DV5H": ("Radiometry_and_Photometry", "energy and exergy of light"),
