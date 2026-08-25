@@ -407,6 +407,15 @@ NO_PRIOR = {
     "Own publications": ["#project/own-publications"],
 }
 
+# Hand corrections made while writing the pages: the classifier's answer was
+# defensible but wrong on reading the item. Key -> (page, note).
+MANUAL_OVERRIDES = {
+    "B72IY295": ("Vertical_Farming_and_Urban_Agriculture",
+                 "subject is powering indoor cultivation, not grid penetration"),
+    "328P62TM": ("Solar_and_Weather_Data",
+                 "review of resource data sets themselves; data-first rule"),
+}
+
 TAG_MAP = {
     "main model": "#project/light-model", "supporting info": "#project/light-model",
     "master thesis": "#project/msc-thesis", "thesis": "#project/msc-thesis",
@@ -463,15 +472,20 @@ def strip_tags(s):
 
 
 def score_pages(title, rest):
-    """Return {page: score}; title matches count double."""
-    scores = defaultdict(int)
+    """Return {page: (total, title_only)}; title matches count double.
+
+    title_only breaks ties: a page matched in the title beats one matched only
+    in the abstract, where the term is far more often incidental.
+    """
+    scores = defaultdict(lambda: [0, 0])
     for page, rules in COMPILED.items():
         for rx, w in rules:
             if rx.search(title):
-                scores[page] += w * 2
+                scores[page][0] += w * 2
+                scores[page][1] += w
             elif rx.search(rest):
-                scores[page] += w
-    return scores
+                scores[page][0] += w
+    return {p: tuple(v) for p, v in scores.items()}
 
 
 def main():
@@ -510,8 +524,9 @@ def main():
         ])))
 
         scores = score_pages(title, rest)
-        ranked = sorted(scores.items(), key=lambda kv: -kv[1])
-        best_page, best_score = (ranked[0] if ranked else (None, 0))
+        ranked = sorted(scores.items(), key=lambda kv: (-kv[1][0], -kv[1][1], kv[0]))
+        best_page = ranked[0][0] if ranked else None
+        best_score = ranked[0][1][0] if ranked else 0
         second = ranked[1][0] if len(ranked) > 1 else None
 
         prior, prior_rel, tags = None, [], []
@@ -548,6 +563,10 @@ def main():
             if "#needs-topic" not in tags:
                 tags.append("#needs-topic")
 
+        if it.get("key") in MANUAL_OVERRIDES:
+            primary, why = MANUAL_OVERRIDES[it["key"]]
+            rule, conf = "manual:" + why, "high"
+
         candidate = ""
         if primary in CANDIDATE_OF:
             primary, candidate = CANDIDATE_OF[primary]
@@ -558,7 +577,7 @@ def main():
             tags.append("#needs-topic")
 
         related = []
-        for cand in ([second] if second and scores.get(second, 0) >= WEAK else []) \
+        for cand in ([second] if second and scores.get(second, (0, 0))[0] >= WEAK else []) \
                 + prior_rel + ([prior] if prior else []):
             if cand and cand != primary and cand != "Unsorted" and cand not in related:
                 related.append(cand)

@@ -1,0 +1,20 @@
+---
+tags: [domain/photovoltaics]
+aliases: [BIPV, rooftop PV, self-consumption, rooftop greenhouses]
+updated: 2026-08-25
+---
+# Building Integrated PV
+
+**Summary**: BIPV, rooftop and façade systems, self-consumption and residential PV, and rooftop solar potential mapping.
+**Parent**: [[Photovoltaics]] · **Related**: [[Urban_Planning]], [[PV_Economics_and_LCA]], [[PV_in_Nordic_Climates]]
+
+---
+
+## Notes
+
+- **[Potential analysis of roof-mounted solar photovoltaics in Sweden](https://doi.org/10.1016/j.apenergy.2020.115786)** — Yang et al. (2020), *Applied Energy*. GIS estimate of Swedish roof area, installable capacity and generation, broken out by building type from residential through industrial to agricultural, at both municipal and national scale. Keywords: rooftop potential, GIS, roof area estimation, building types, Sweden. Related: [[Urban_Planning]], [[Geodata_Portals_Nordic]]. [zotero](zotero://select/library/items/Z4JKMT55) #region/sweden
+- **[Self-Consumption of Photovoltaic Electricity in Residential Buildings](http://urn.kb.se/resolve?urn=urn:nbn:se:uu:diva-362819)** — Luthander (2018), PhD thesis, Uppsala University. Systematic treatment of self-consumption in building-applied PV: how it is defined and measured, and what load shifting and storage actually shift it by. Keywords: self-consumption, residential PV, load matching, storage. Related: [[Energy_Storage]], [[PV_Economics_and_LCA]]. [zotero](zotero://select/library/items/VAD39575) #region/sweden #project/msc-thesis/4-14
+- **[Residential solar electricity adoption: how households in Sweden search for and use information](https://doi.org/10.1186/s13705-018-0156-1)** — Palm & Eriksson (2018), *Energy, Sustainability and Society*. Treats information access as the binding barrier to household PV adoption, and looks at where Swedish households actually go for it and how they read what they find. Keywords: adoption, information barriers, households, Sweden. Related: [[PV_Economics_and_LCA]]. [zotero](zotero://select/library/items/KIT6K6S7) #region/sweden
+- **[Productivity of a building-integrated roof top greenhouse in a Mediterranean climate](https://doi.org/10.1016/j.agsy.2017.08.002)** — Montero et al. (2017), *Agricultural Systems*. Rooftop greenhouses integrated with the building below, exchanging air, heat, CO2 and water; reports radiation use efficiency and tomato productivity for the integrated case. Keywords: rooftop greenhouse, urban agriculture, radiation use efficiency, thermal inertia. Related: [[Greenhouse_Horticulture]], [[Vertical_Farming_and_Urban_Agriculture]]. [zotero](zotero://select/library/items/V2E6MPJQ) #crop/tomato
+- **[Building-integrated rooftop greenhouses: An energy and environmental assessment in the Mediterranean context](https://doi.org/10.1016/j.apenergy.2016.11.051)** — Nadal et al. (2017), *Applied Energy*. Measured energy data from the ICTA-ICP building in Barcelona, the first fully integrated rooftop greenhouse in southern Europe, exchanging heat, CO2 and rainwater with the host building. Keywords: integrated rooftop greenhouse, energy-food nexus, building simulation, measured data. Related: [[Greenhouse_Horticulture]], [[Vertical_Farming_and_Urban_Agriculture]]. [zotero](zotero://select/library/items/8AHLZEBA)
+- **[Greenhouse tomato production with electricity generation by roof-mounted flexible solar panels](https://doi.org/10.1590/S0103-90162012000400001)** — Ureña-Sánchez et al. (2012), *Scientia Agricola*. Flexible panels on a commercial Almería *raspa y amagado* greenhouse: quantifies what the added shade costs in tomato yield and fruit quality against the electricity gained. Keywords: flexible modules, shading, tomato yield, fruit quality, Almería. Related: [[PV_Greenhouses]], [[Agrivoltaics]]. [zotero](zotero://select/library/items/IELTCRMT) #crop/tomato
