@@ -444,6 +444,19 @@ NO_PRIOR = {
 # Hand corrections made while writing the pages: the classifier's answer was
 # defensible but wrong on reading the item. Key -> (page, note).
 MANUAL_OVERRIDES = {
+    "IJELJATY": ("Swedish_Forestry", "the Swedish Forestry Act"),
+    "TLLBYS52": ("Forestry_and_Agriculture_Statistics", "seedling production statistics 2017"),
+    "6XL75F5K": ("Forest_Regeneration", "seedling size, competition and overstory density"),
+    "QEIVCLYC": ("Forest_Regeneration", "competing vegetation effects"),
+    "9QF55LNS": ("Forest_Regeneration", "Siberian larch establishment potential"),
+    "2YNKQC39": ("Seedling_Quality_and_Root_Growth_Potential", "why seedlings survive"),
+    "4CS5RIZ9": ("Seedling_Quality_and_Root_Growth_Potential", "root growth and planting stress"),
+    "VN575BWT": ("Forest_Seedling_Production", "Scots pine seed germination"),
+    "48ZMLUG7": ("Radiometry_and_Photometry", "erythema reference action spectrum"),
+    "6FQTI9N2": ("Greenhouse_Horticulture", "plant growth chamber handbook"),
+    "BEW3KTZ6": ("Greenhouse_Horticulture", "growth chamber radiation chapter"),
+    "J97KPHZP": ("Greenhouse_Horticulture", "greenhouse covering and shading spectra"),
+
     "5PUFREGM": ("Forest_Damage_and_Herbivory", "ungulates and supplementary feeding"),
     "SYTRTIT3": ("Forest_Damage_and_Herbivory", "feeding wild ungulates"),
     "K2PH37C3": ("Forest_Damage_and_Herbivory", "roe deer browsing"),
