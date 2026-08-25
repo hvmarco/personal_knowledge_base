@@ -410,6 +410,29 @@ NO_PRIOR = {
 # Hand corrections made while writing the pages: the classifier's answer was
 # defensible but wrong on reading the item. Key -> (page, note).
 MANUAL_OVERRIDES = {
+    # The MSc-thesis book shelf landed together on the electrical page; split it
+    # by what each book is actually about.
+    "UTF9EDHH": ("PV_Cell_and_Module_Technologies", "physics of solar energy textbook"),
+    "58WST3UE": ("PV_Cell_and_Module_Technologies", "introduction to photovoltaics"),
+    "7EGAHEDE": ("PV_Cell_and_Module_Technologies", "fundamentals of PV modules"),
+    "W5GF2CCN": ("PV_Cell_and_Module_Technologies", "PV solar energy generation textbook"),
+    "JJGCZ487": ("PV_Cell_and_Module_Technologies", "Applied Photovoltaics, cell-to-system"),
+    "AW9UZSDW": ("PV_Cell_and_Module_Technologies", "solar energy and environment textbook"),
+    "HEIIHR5J": ("PV_Cell_and_Module_Technologies", "Solar Electricity textbook"),
+    "2U8DJQ8B": ("PV_Cell_and_Module_Technologies", "solar energy engineering, device-led"),
+    "559RS28D": ("PV_Cell_and_Module_Technologies", "hybrid PV/thermal collector design"),
+    "UJL3MQAB": ("Building_Integrated_PV", "solar technologies for buildings"),
+    "M2ZFA8EL": ("PV_Standards_and_Measurement", "PV power measurement guidelines"),
+    "BAPNEDLE": ("PV_System_Performance", "SolarPro performance-modelling articles"),
+    # O&M and project development are practice, not electrical design
+    "GQZCGPHC": ("PV_Degradation_and_Reliability", "utility-scale O&M overview"),
+    "RV769VEY": ("PV_Degradation_and_Reliability", "NREL O&M best practices"),
+    "UGWHMKCA": ("PV_Degradation_and_Reliability", "SolarPower Europe O&M guidelines"),
+    "RMBFUMGJ": ("Site_Layout_and_Civil_Design", "IFC utility-scale developer guide"),
+    "9XTZ5U4B": ("Site_Layout_and_Civil_Design", "PV system installation best practices"),
+    "RJ9T5YV4": ("Site_Layout_and_Civil_Design", "ground-based layout optimisation tool"),
+    # not PV at all
+    "Z9Z3PNP6": ("Optimization_and_Decision_Making", "Lloyd's method variant; kept for equal-area parcelling"),
     # "reliability" / "degradation" pulled non-PV items onto the PV pages
     "V28MQKKX": ("Photosynthesis_and_Gas_Exchange", "quality of gas exchange measurements"),
     "83WKV2WU": ("Statistics_and_Data_Analysis", "measurement error in continuous variables"),

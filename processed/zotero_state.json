@@ -21,7 +21,8 @@
   "PV_Shading_and_Mismatch",
   "PV_Greenhouses",
   "Solar_and_Weather_Data",
-  "Energy_Transition_and_Scenarios"
+  "Energy_Transition_and_Scenarios",
+  "PV_Electrical_Design_and_Inverters"
  ],
  "items": {
   "LPZRRRFG": "Radiometry_and_Photometry",
@@ -269,6 +270,27 @@
   "RK46XP6L": "Energy_Transition_and_Scenarios",
   "HWUPUPGX": "Energy_Transition_and_Scenarios",
   "RCTTYGGA": "Energy_Transition_and_Scenarios",
-  "QD9PKRRZ": "Energy_Transition_and_Scenarios"
+  "QD9PKRRZ": "Energy_Transition_and_Scenarios",
+  "KSAGSCKI": "PV_Electrical_Design_and_Inverters",
+  "ZA7IWYAT": "PV_Electrical_Design_and_Inverters",
+  "45KTRLH4": "PV_Electrical_Design_and_Inverters",
+  "8MDPCKGK": "PV_Electrical_Design_and_Inverters",
+  "SKMY7GX9": "PV_Electrical_Design_and_Inverters",
+  "WZ7RPK9H": "PV_Electrical_Design_and_Inverters",
+  "LHV8X4ZT": "PV_Electrical_Design_and_Inverters",
+  "W6KFBGKQ": "PV_Electrical_Design_and_Inverters",
+  "Y2TBEPIN": "PV_Electrical_Design_and_Inverters",
+  "IAYEK9EG": "PV_Electrical_Design_and_Inverters",
+  "N2Q3LHQM": "PV_Electrical_Design_and_Inverters",
+  "XAEI3IPF": "PV_Electrical_Design_and_Inverters",
+  "XIIE2JMV": "PV_Electrical_Design_and_Inverters",
+  "BKJEZPMI": "PV_Electrical_Design_and_Inverters",
+  "9AD5SEPG": "PV_Electrical_Design_and_Inverters",
+  "NFHNFFLG": "PV_Electrical_Design_and_Inverters",
+  "GAHFNQ4J": "PV_Electrical_Design_and_Inverters",
+  "U9YZMK5X": "PV_Electrical_Design_and_Inverters",
+  "43V8S8JD": "PV_Electrical_Design_and_Inverters",
+  "JEQ4WTSV": "PV_Electrical_Design_and_Inverters",
+  "2R5Z4MQ6": "PV_Electrical_Design_and_Inverters"
  }
 }
